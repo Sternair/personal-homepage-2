@@ -10,7 +10,6 @@ import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faXingSquare } from '@fortawesome/free-brands-svg-icons'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
-import scrollSnapPolyfill from 'css-scroll-snap-polyfill'
 
 const IndexPage = () => {
   const imgData = useStaticQuery(graphql`
@@ -27,7 +26,12 @@ const IndexPage = () => {
     }
   `)
 
-  useEffect(() => scrollSnapPolyfill(), [])
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // eslint-disable-next-line global-require
+      require('css-scroll-snap-polyfill')()
+    }
+  }, [])
 
   return (
     <Layout>
