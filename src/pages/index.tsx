@@ -124,6 +124,7 @@ const IndexPage = () => {
                 <Img
                   fixed={imgData.file.childImageSharp.fixed}
                   alt="Markus Sterner Picture"
+                  loading="eager"
                 />
               </Box>
             </Flex>
