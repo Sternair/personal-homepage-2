@@ -17,19 +17,26 @@ const theme = {
     heading: 1.125,
   },
   colors: {
-    text: '#000',
+    text: 'black',
     background: '#fff',
     primary: '#07c',
     secondary: '#30c',
     muted: '#f6f6f6',
-    white: '#fff'
+    white: '#fff',
+    black: '#0e1111',
   },
   container: {
     maxWidth: 1200,
     inverted: {
-      bg: '#000',
-      color: '#fff'
-    }
+      bg: 'black',
+      color: 'white',
+    },
+  },
+  text: {
+    default: {
+      fontSize: [1, 2],
+      hyphens: 'auto',
+    },
   },
   styles: {
     root: {
@@ -87,10 +94,7 @@ const theme = {
     },
     a: {
       color: 'white',
-      textDecoration: 'none',
-      ':hover': {
-        textDecoration: 'underline'
-      }
+      textDecoration: 'underline',
     },
     pre: {
       fontFamily: 'monospace',

@@ -58,9 +58,10 @@ const IndexPage = () => {
               paddingTop: '30vh',
             }}
           >
-            <Heading as="h1">Hi,</Heading>
-            <Heading as="h1">I am Markus and&nbsp;</Heading>
             <Heading as="h1" sx={{ textAlign: 'center' }}>
+              Hi,
+              <br />I am Markus and
+              <br />
               <TypeAnimation />
             </Heading>
             <DoubleArrows
@@ -70,6 +71,70 @@ const IndexPage = () => {
                 marginTop: '30vh',
               }}
             />
+          </Flex>
+        </Container>
+        <Container
+          sx={{
+            variant: 'container.inverted',
+            height: '100vh',
+            scrollSnapAlign: 'start',
+          }}
+        >
+          <Flex
+            sx={{
+              alignContent: 'center',
+              justifyContent: 'space-evenly',
+              flexDirection: 'row',
+              height: '100%',
+              flexWrap: 'wrap-reverse',
+            }}
+          >
+            <Box sx={{ marginX: 4 }}>
+              <Heading
+                as="h2"
+                sx={{ fontSize: '2em', textAlign: 'center' }}
+                mb={4}
+              >
+                About me
+              </Heading>
+              <Text as="p" sx={{ maxWidth: 500 }}>
+                Having worked many different jobs in my career, I have finally
+                found my passion in 2014. During my studies of media informatics
+                I wrote my first lines of computer code that sparked my
+                curiosity, joy and enthusiasm for software development. Like a
+                good code base, I tried to constantly improve myself ever since.
+                After working on different projects with different people, I
+                learned much more than new technical skills. I am now able to
+                compare various approaches around developing and operating
+                software, but also around product and people management. In
+                addition to the practical experience, I constantly gather
+                theoretical knowledge through books, blogs, newsletters, meetups
+                and workshops.
+                <br />
+                <br />
+                Since April 2020 I am freelancing as a Fullstack Web Developer
+                in the Munich area. I am always open towards new and exciting
+                opportunities. Feel free to reach out to me any time!
+                <br />
+                <br />
+                By the way: I wrote a little game just for fun, available both
+                on&nbsp;
+                <Link
+                  href="https://play.google.com/store/apps/details?id=de.markussterner.color_quiz"
+                  target="_blank"
+                >
+                  Google&nbsp;Play
+                </Link>{' '}
+                and the{' '}
+                <Link
+                  href="https://apps.apple.com/us/app/id1504745363"
+                  target="_blank"
+                >
+                  App&nbsp;Store
+                </Link>
+                &nbsp;:)
+              </Text>
+            </Box>
           </Flex>
         </Container>
         <Container
@@ -96,8 +161,10 @@ const IndexPage = () => {
               }}
             >
               <Box sx={{ marginX: 4 }}>
-                <Heading as="h1">Get in touch</Heading>
-                <Heading as="h2" sx={{ marginTop: 4, fontSize: '1.4rem' }}>
+                <Heading as="h2" sx={{ fontSize: '2em' }}>
+                  Get in touch
+                </Heading>
+                <Heading as="h3" sx={{ marginTop: 4, fontSize: '1.4rem' }}>
                   Markus Sterner
                 </Heading>
 
@@ -120,7 +187,14 @@ const IndexPage = () => {
                   <FontAwesomeIcon icon={faXingSquare} size="2x" />
                 </Link>
               </Box>
-              <Box sx={{ height: 200, width: 200, marginX: 4 }} mb={5}>
+              <Box
+                sx={{
+                  height: 200,
+                  width: 200,
+                  marginX: 4,
+                }}
+                mb={5}
+              >
                 <Img
                   fixed={imgData.file.childImageSharp.fixed}
                   alt="Markus Sterner Picture"
@@ -129,7 +203,14 @@ const IndexPage = () => {
               </Box>
             </Flex>
             <footer sx={{ paddingBottom: 2 }}>
-              <Link href="/imprint" sx={{ paddingLeft: 2 }}>
+              <Link
+                href="/imprint"
+                sx={{
+                  paddingLeft: 2,
+                  color: '#707070',
+                  textDecoration: 'none',
+                }}
+              >
                 Imprint
               </Link>
             </footer>
