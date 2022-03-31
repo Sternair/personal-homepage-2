@@ -101,7 +101,7 @@ const IndexPage = () => {
                 as="p"
                 sx={{
                   maxWidth: 500,
-                  maxHeight: 'calc(100vh - 100px)',
+                  maxHeight: 'calc(100vh - 200px)',
                   overflow: 'scroll',
                 }}
               >

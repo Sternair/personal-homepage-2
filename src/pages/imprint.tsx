@@ -15,10 +15,12 @@ const ImprintPage: React.FC = () => (
         <Heading as="h1">Impressum</Heading>
         <p>Angaben gemäß § 5 TMG</p>
         <p>
-          Markus Sterner <br />
-          Agnesstr. 24
+          Markus Sterner
           <br />
-          80798 München <br />
+          Fritz-Berne-Str. 40A
+          <br />
+          81241 München
+          <br />
         </p>
         <p>
           <strong>Vertreten durch: </strong>
