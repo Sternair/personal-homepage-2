@@ -95,14 +95,12 @@ const IndexPage = () => {
                 sx={{ fontSize: '2em', textAlign: 'center' }}
                 mb={4}
               >
-                About me
+                Software Development
               </Heading>
               <Text
                 as="p"
                 sx={{
                   maxWidth: 500,
-                  maxHeight: 'calc(100vh - 200px)',
-                  overflow: 'scroll',
                 }}
               >
                 Having worked many different jobs in my career, I have finally
@@ -110,15 +108,47 @@ const IndexPage = () => {
                 at LMU Munich, I wrote my first lines of computer code that
                 sparked my curiosity, joy and enthusiasm for software
                 development. Like a good code base, I tried to constantly
-                improve myself ever since. After working on different projects
+                improve myself ever since. After working on multiple different projects
                 with different people, I learned much more than new technical
                 skills. I am now able to compare various approaches around
                 developing and operating software, but also around product and
                 people management. In addition to the practical experience, I
                 constantly gather theoretical knowledge through books, blogs,
                 newsletters, meetups and workshops.
-                <br />
-                <br />
+              </Text>
+            </Box>
+          </Flex>
+        </Container>
+        <Container
+          sx={{
+            variant: 'container.inverted',
+            height: '100vh',
+            scrollSnapAlign: 'start',
+          }}
+        >
+          <Flex
+            sx={{
+              alignContent: 'center',
+              justifyContent: 'space-evenly',
+              flexDirection: 'row',
+              height: '100%',
+              flexWrap: 'wrap-reverse',
+            }}
+          >
+            <Box sx={{ marginX: 4 }}>
+              <Heading
+                as="h2"
+                sx={{ fontSize: '2em', textAlign: 'center' }}
+                mb={4}
+              >
+                Entrepreneur
+              </Heading>
+              <Text
+                as="p"
+                sx={{
+                  maxWidth: 500,
+                }}
+              >
                 In April 2021 I co-founded{' '}
                 <Link href="https://nomizz.com" target="_blank">
                   nomizz
@@ -128,13 +158,46 @@ const IndexPage = () => {
                 a company and building a SaaS application from the ground up as
                 a CTO, product manager and engineer. In March 2022 I left
                 nomizz, while my co-founder continues working on the product.
-                <br />
-                <br />
-                Now I am looking for new opportunities to support other
-                companies and software engineering teams as a freelancer. My
-                biggest strength is serving as the link between the business and
+                <br/>
+                <br/>
+                This was certainly not the last company I founded ...
+              </Text>
+            </Box>
+          </Flex>
+        </Container>
+        <Container
+          sx={{
+            variant: 'container.inverted',
+            height: '100vh',
+            scrollSnapAlign: 'start',
+          }}
+        >
+          <Flex
+            sx={{
+              alignContent: 'center',
+              justifyContent: 'space-evenly',
+              flexDirection: 'row',
+              height: '100%',
+              flexWrap: 'wrap-reverse',
+            }}
+          >
+            <Box sx={{ marginX: 4 }}>
+              <Heading
+                as="h2"
+                sx={{ fontSize: '2em', textAlign: 'center' }}
+                mb={4}
+              >
+                Need support?
+              </Heading>
+              <Text
+                as="p"
+                sx={{
+                  maxWidth: 500,
+                }}
+              >
+                My biggest strength is serving as the link between the business and
                 engineering, while coding on the front- and backend myself. If
-                you think I can be of any help for you and your team, feel free
+                you think I can be of any help to you and your team, feel free
                 to reach out to me any time!
                 <br />
                 <br />
@@ -185,11 +248,11 @@ const IndexPage = () => {
                 <Heading as="h2" sx={{ fontSize: '2em' }}>
                   Get in touch
                 </Heading>
-                <Heading as="h3" sx={{ marginTop: 4, fontSize: '1.4rem' }}>
+                <Heading as="h3" sx={{ marginTop: 4, marginBottom: 1, fontSize: '1.4rem' }}>
                   Markus Sterner
                 </Heading>
 
-                <Text sx={{ marginBottom: 3 }}>Software Developer</Text>
+                <Text sx={{ marginBottom: 3 }}>Software Developer &<br/>Entrepreneur</Text>
                 <Link href="mailto:info@markus-sterner.de">
                   <FontAwesomeIcon icon={faEnvelopeSquare} size="2x" />
                 </Link>
