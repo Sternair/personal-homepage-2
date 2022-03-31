@@ -11,15 +11,15 @@ export const TypeAnimation: React.FC = () => {
         '^500Frontend Developer',
         '^500Backend Developer',
         '^500App Developer',
-        '^200Agiler De',
+        '^200Agile De',
         '^200Fullstack De',
-        '^200Archit',
+        '^200Entrepren',
         '^2000Software Developer^2000.',
       ],
 
       typeSpeed: 40,
       backSpeed: 30,
-      backDelay: 1000
+      backDelay: 1000,
     })
   }, [])
 

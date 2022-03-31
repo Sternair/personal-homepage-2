@@ -97,24 +97,45 @@ const IndexPage = () => {
               >
                 About me
               </Heading>
-              <Text as="p" sx={{ maxWidth: 500 }}>
+              <Text
+                as="p"
+                sx={{
+                  maxWidth: 500,
+                  maxHeight: 'calc(100vh - 100px)',
+                  overflow: 'scroll',
+                }}
+              >
                 Having worked many different jobs in my career, I have finally
                 found my passion in 2014. During my studies of media informatics
-                I wrote my first lines of computer code that sparked my
-                curiosity, joy and enthusiasm for software development. Like a
-                good code base, I tried to constantly improve myself ever since.
-                After working on different projects with different people, I
-                learned much more than new technical skills. I am now able to
-                compare various approaches around developing and operating
-                software, but also around product and people management. In
-                addition to the practical experience, I constantly gather
-                theoretical knowledge through books, blogs, newsletters, meetups
-                and workshops.
+                at LMU Munich, I wrote my first lines of computer code that
+                sparked my curiosity, joy and enthusiasm for software
+                development. Like a good code base, I tried to constantly
+                improve myself ever since. After working on different projects
+                with different people, I learned much more than new technical
+                skills. I am now able to compare various approaches around
+                developing and operating software, but also around product and
+                people management. In addition to the practical experience, I
+                constantly gather theoretical knowledge through books, blogs,
+                newsletters, meetups and workshops.
                 <br />
                 <br />
-                Since April 2020 I am freelancing as a Fullstack Web Developer
-                in the Munich area. I am always open towards new and exciting
-                opportunities. Feel free to reach out to me any time!
+                In April 2021 I co-founded{' '}
+                <Link href="https://nomizz.com" target="_blank">
+                  nomizz
+                </Link>{' '}
+                and made my dream come true of becoming an entrepreneur. During
+                one year I could learn countless invaluable lessons of operating
+                a company and building a SaaS application from the ground up as
+                a CTO, product manager and engineer. In March 2022 I left
+                nomizz, while my co-founder continues working on the product.
+                <br />
+                <br />
+                Now I am looking for new opportunities to support other
+                companies and software engineering teams as a freelancer. My
+                biggest strength is serving as the link between the business and
+                engineering, while coding on the front- and backend myself. If
+                you think I can be of any help for you and your team, feel free
+                to reach out to me any time!
                 <br />
                 <br />
                 By the way: I wrote a little game just for fun, available both
